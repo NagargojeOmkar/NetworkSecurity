@@ -42,3 +42,60 @@ class DataIngestionConfig:
 
         self.collection_name = training_pipeline.DATA_INGESTION_COLLECTION_NAME
         self.database_name = training_pipeline.DATA_INGESTION_DATABASE_NAME
+
+class DataValidationConfig:
+    def __init__(self,
+                 training_pipeline_config: TrainingPipelineConfig,
+                 data_ingestion_artifact):
+
+        self.data_validation_dir = os.path.join(
+            training_pipeline_config.artifact_dir,
+            training_pipeline.DATA_VALIDATION_DIR_NAME
+        )
+
+        # VALID DATA
+        self.valid_data_dir = os.path.join(
+            self.data_validation_dir,
+            training_pipeline.DATA_VALIDATION_VALID_DIR
+        )
+
+        self.valid_train_file_path = os.path.join(
+            self.valid_data_dir,
+            "train.csv"
+        )
+
+        self.valid_test_file_path = os.path.join(
+            self.valid_data_dir,
+            "test.csv"
+        )
+
+        # INVALID DATA
+        self.invalid_data_dir = os.path.join(
+            self.data_validation_dir,
+            training_pipeline.DATA_VALIDATION_INVALID_DIR
+        )
+
+        self.invalid_train_file_path = os.path.join(
+            self.invalid_data_dir,
+            "train.csv"
+        )
+
+        self.invalid_test_file_path = os.path.join(
+            self.invalid_data_dir,
+            "test.csv"
+        )
+
+        # DRIFT REPORT
+        self.drift_report_file_path = os.path.join(
+            self.data_validation_dir,
+            training_pipeline.DATA_VALIDATION_DRIFT_REPORT_DIR,
+            training_pipeline.DATA_VALIDATION_DRIFT_REPORT_FILE_NAME
+        )
+
+        # INPUT FROM INGESTION
+        self.train_file_path = data_ingestion_artifact.trained_file_path
+        self.test_file_path = data_ingestion_artifact.test_file_path
+
+
+
+
