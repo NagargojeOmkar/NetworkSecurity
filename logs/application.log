@@ -16,3 +16,55 @@
 [ 2026-04-04 11:51:05,807 ] 28 networksecurityLogger - INFO - Data loaded successfully from CSV
 [ 2026-04-04 11:51:18,762 ] 45 networksecurityLogger - INFO - Data successfully pushed to MongoDB
 [ 2026-04-04 11:51:18,766 ] 63 networksecurityLogger - INFO - Data push pipeline completed
+[ 2026-04-04 13:34:31,598 ] 164 numexpr.utils - INFO - NumExpr defaulting to 12 threads.
+[ 2026-04-04 13:34:44,189 ] 10 networksecurityLogger - INFO - Training pipeline started
+[ 2026-04-04 13:34:44,267 ] 46 networksecurityLogger - INFO - Data fetched from MongoDB
+[ 2026-04-04 13:34:44,277 ] 59 networksecurityLogger - INFO - Data saved to feature store
+[ 2026-04-04 13:34:44,278 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [68] error message: [With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.]
+[ 2026-04-04 13:34:44,278 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [89] error message: [With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.]
+[ 2026-04-04 13:34:44,278 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\main.py] at line: [14] error message: [With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.]
+[ 2026-04-04 13:37:43,111 ] 164 numexpr.utils - INFO - NumExpr defaulting to 12 threads.
+[ 2026-04-04 13:37:44,226 ] 10 networksecurityLogger - INFO - Training pipeline started
+[ 2026-04-04 13:37:44,246 ] 46 networksecurityLogger - INFO - Data fetched from MongoDB
+[ 2026-04-04 13:37:44,250 ] 59 networksecurityLogger - INFO - Data saved to feature store
+[ 2026-04-04 13:37:44,250 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [68] error message: [With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.]
+[ 2026-04-04 13:37:44,250 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [89] error message: [With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.]
+[ 2026-04-04 13:37:44,250 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\main.py] at line: [14] error message: [With n_samples=0, test_size=0.2 and train_size=None, the resulting train set will be empty. Adjust any of the aforementioned parameters.]
+[ 2026-04-04 13:39:07,245 ] 164 numexpr.utils - INFO - NumExpr defaulting to 12 threads.
+[ 2026-04-04 13:39:08,404 ] 10 networksecurityLogger - INFO - Training pipeline started
+[ 2026-04-04 13:39:14,038 ] 46 networksecurityLogger - INFO - Data fetched from MongoDB
+[ 2026-04-04 13:39:14,837 ] 59 networksecurityLogger - INFO - Data saved to feature store
+[ 2026-04-04 13:39:15,685 ] 80 networksecurityLogger - INFO - Train-test split done
+[ 2026-04-04 13:39:15,686 ] 91 networksecurityLogger - INFO - Data ingestion completed
+[ 2026-04-04 13:39:15,686 ] 16 networksecurityLogger - INFO - Data Ingestion Artifact: None
+[ 2026-04-04 13:39:15,686 ] 18 networksecurityLogger - INFO - Training pipeline completed successfully
+[ 2026-04-04 13:41:28,967 ] 10 networksecurityLogger - INFO - Training pipeline started
+[ 2026-04-04 13:41:29,011 ] 48 networksecurityLogger - INFO - Data fetched from MongoDB | shape: (0, 0)
+[ 2026-04-04 13:41:29,011 ] 20 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [51] error message: [No data found in MongoDB]
+[ 2026-04-04 13:41:29,011 ] 20 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [92] error message: [Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [51] error message: [No data found in MongoDB]]
+[ 2026-04-04 13:41:29,012 ] 20 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\main.py] at line: [14] error message: [Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [92] error message: [Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [51] error message: [No data found in MongoDB]]]
+[ 2026-04-04 13:44:13,313 ] 30 networksecurityLogger - INFO - Loading data from CSV...
+[ 2026-04-04 13:44:13,339 ] 37 networksecurityLogger - INFO - Data loaded | shape: (11055, 31)
+[ 2026-04-04 13:44:13,339 ] 51 networksecurityLogger - INFO - Connecting to MongoDB...
+[ 2026-04-04 13:44:15,220 ] 79 networksecurityLogger - INFO - Old data cleared from collection
+[ 2026-04-04 13:44:25,948 ] 93 networksecurityLogger - INFO - Inserted 11055 records into MongoDB
+[ 2026-04-04 13:44:26,383 ] 119 networksecurityLogger - INFO - Data push pipeline completed
+[ 2026-04-04 13:46:38,875 ] 30 networksecurityLogger - INFO - Loading data from CSV...
+[ 2026-04-04 13:46:38,900 ] 37 networksecurityLogger - INFO - Data loaded | shape: (11055, 31)
+[ 2026-04-04 13:46:38,901 ] 51 networksecurityLogger - INFO - Connecting to MongoDB...
+[ 2026-04-04 13:46:40,012 ] 58 networksecurityLogger - INFO - MongoDB connection successful
+[ 2026-04-04 13:46:41,039 ] 79 networksecurityLogger - INFO - Old data cleared from collection
+[ 2026-04-04 13:46:49,398 ] 93 networksecurityLogger - INFO - Inserted 11055 records into MongoDB
+[ 2026-04-04 13:46:49,672 ] 119 networksecurityLogger - INFO - Data push pipeline completed
+[ 2026-04-04 13:47:17,253 ] 10 networksecurityLogger - INFO - Training pipeline started
+[ 2026-04-04 13:47:17,272 ] 48 networksecurityLogger - INFO - Data fetched from MongoDB | shape: (0, 0)
+[ 2026-04-04 13:47:17,272 ] 20 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [51] error message: [No data found in MongoDB]
+[ 2026-04-04 13:47:17,273 ] 20 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [92] error message: [Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [51] error message: [No data found in MongoDB]]
+[ 2026-04-04 13:47:17,273 ] 20 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\main.py] at line: [14] error message: [Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [92] error message: [Error occurred in script: [E:\ml\Project\networksecurity\pipeline\data_ingestion.py] at line: [51] error message: [No data found in MongoDB]]]
+[ 2026-04-04 13:50:46,812 ] 10 networksecurityLogger - INFO - Training pipeline started
+[ 2026-04-04 13:50:53,596 ] 50 networksecurityLogger - INFO - Data fetched from MongoDB | shape: (11055, 31)
+[ 2026-04-04 13:50:54,316 ] 66 networksecurityLogger - INFO - Data saved to feature store
+[ 2026-04-04 13:50:55,059 ] 87 networksecurityLogger - INFO - Train-test split done
+[ 2026-04-04 13:50:55,059 ] 98 networksecurityLogger - INFO - Data ingestion completed
+[ 2026-04-04 13:50:55,059 ] 16 networksecurityLogger - INFO - Data Ingestion Artifact: DataIngestionArtifact(trained_file_path='Artifacts\\04_04_2026_13_50_46\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\04_04_2026_13_50_46\\data_ingestion\\ingested\\test.csv')
+[ 2026-04-04 13:50:55,059 ] 18 networksecurityLogger - INFO - Training pipeline completed successfully
