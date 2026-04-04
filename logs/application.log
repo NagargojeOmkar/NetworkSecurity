@@ -1,1 +1,18 @@
 [ 2026-04-04 11:28:43,711 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\networksecurity\exception\exception.py] at line: [30] error message: [division by zero]
+[ 2026-04-04 11:47:44,980 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\push_data.py] at line: [27] error message: [[Errno 2] No such file or directory: 'Network_data/data.csv']
+[ 2026-04-04 11:47:44,980 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\push_data.py] at line: [60] error message: [[Errno 2] No such file or directory: 'Network_data/data.csv']
+[ 2026-04-04 11:48:35,176 ] 28 networksecurityLogger - INFO - Data loaded successfully from CSV
+[ 2026-04-04 11:48:35,176 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\push_data.py] at line: [36] error message: [Invalid URI scheme: URI must begin with 'mongodb://' or 'mongodb+srv://']
+[ 2026-04-04 11:48:35,176 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\push_data.py] at line: [61] error message: [Invalid URI scheme: URI must begin with 'mongodb://' or 'mongodb+srv://']
+[ 2026-04-04 11:48:57,079 ] 28 networksecurityLogger - INFO - Data loaded successfully from CSV
+[ 2026-04-04 11:48:59,279 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\push_data.py] at line: [44] error message: [bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}]
+[ 2026-04-04 11:48:59,279 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\push_data.py] at line: [61] error message: [bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}]
+[ 2026-04-04 11:49:11,305 ] 28 networksecurityLogger - INFO - Data loaded successfully from CSV
+[ 2026-04-04 11:49:12,794 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\push_data.py] at line: [44] error message: [bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}]
+[ 2026-04-04 11:49:12,794 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\push_data.py] at line: [61] error message: [bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}]
+[ 2026-04-04 11:50:10,635 ] 28 networksecurityLogger - INFO - Data loaded successfully from CSV
+[ 2026-04-04 11:50:11,572 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\push_data.py] at line: [44] error message: [bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}]
+[ 2026-04-04 11:50:11,573 ] 25 networksecurityLogger - ERROR - Error occurred in script: [E:\ml\Project\push_data.py] at line: [61] error message: [bad auth : authentication failed, full error: {'ok': 0, 'errmsg': 'bad auth : authentication failed', 'code': 8000, 'codeName': 'AtlasError'}]
+[ 2026-04-04 11:51:05,807 ] 28 networksecurityLogger - INFO - Data loaded successfully from CSV
+[ 2026-04-04 11:51:18,762 ] 45 networksecurityLogger - INFO - Data successfully pushed to MongoDB
+[ 2026-04-04 11:51:18,766 ] 63 networksecurityLogger - INFO - Data push pipeline completed
