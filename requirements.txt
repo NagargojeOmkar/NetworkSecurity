@@ -1,5 +1,34 @@
+# Core libraries
 numpy
 pandas
-scikit-learn
+
+# Visualization
 matplotlib
+seaborn
+
+# Machine Learning
+scikit-learn
+
+# Model saving
+joblib
+
+# Notebook support
+jupyter
+ipykernel
+
+# Env config
+python-dotenv
+
+# API (optional deployment)
+fastapi
+uvicorn
+
+# Validation
+pydantic
+
+# Database (MongoDB)
+pymongo
+certifi
+
+# Editable install
 -e .

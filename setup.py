@@ -1,36 +1,27 @@
-from setuptools import setup, find_packages  # setup: package banane ke liye, find_packages: auto detect folders
-from typing import List  # type hinting ke liye (optional but good practice)
+from setuptools import setup, find_packages  # package setup + auto-detect modules
+from typing import List
 
-HYPEN_E_DOT = "-e ."  # ye editable install flag hai (requirements.txt me use hota hai)
+HYPEN_E_DOT = "-e ."  # editable install flag
 
 
 def get_requirements(file_path: str) -> List[str]:
-    """
-    Ye function requirements.txt file read karta hai
-    aur dependencies ki list return karta hai
-    """
+    """Read requirements file and return dependency list"""
     requirements = []
 
     with open(file_path) as file_obj:
-        requirements = file_obj.readlines()  # sari lines read karega
-        requirements = [req.strip() for req in requirements]  # newline remove karega
+        requirements = [req.strip() for req in file_obj.readlines()]
 
-        # agar -e . present hai to remove kar denge
-        # warna recursion issue ho sakta hai (setup.py khud ko hi call karega)
         if HYPEN_E_DOT in requirements:
-            requirements.remove(HYPEN_E_DOT)
+            requirements.remove(HYPEN_E_DOT)  # avoid recursive install
 
-    return requirements  # final clean list return
+    return requirements
 
 
 setup(
-    name="networksecurity",  # project/package ka naam (import me use hoga)
-    version="0.0.1",  # versioning (future updates ke liye important)
-    author="Omkar",  # tera naam
-    packages=find_packages(),  # automatically sare packages (folders) detect karega
-
-    # requirements.txt se dependencies install karega
-    install_requires=get_requirements("requirments.txt"),
-
-    python_requires=">=3.8",  # minimum python version define
+    name="networksecurity",  # package name
+    version="0.0.1",
+    author="Omkar",
+    packages=find_packages(),  # auto-discover packages
+    install_requires=get_requirements("requirements.txt"),  # load dependencies
+    python_requires=">=3.8",  # minimum Python version
 )
