@@ -105,3 +105,58 @@
 [ 2026-04-05 00:48:49,026 ] 100 networksecurityLogger - INFO - Data Validation Completed
 [ 2026-04-05 00:48:49,027 ] 37 networksecurityLogger - INFO - Data Validation Artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\04_05_2026_00_48_44\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\04_05_2026_00_48_44\\data_validation\\validated\\test.csv', invalid_train_file_path='Artifacts\\04_05_2026_00_48_44\\data_validation\\invalid\\train.csv', invalid_test_file_path='Artifacts\\04_05_2026_00_48_44\\data_validation\\invalid\\test.csv', drift_report_file_path='Artifacts\\04_05_2026_00_48_44\\data_validation\\drift_report\\report.yaml')
 [ 2026-04-05 00:48:49,028 ] 39 networksecurityLogger - INFO - Training pipeline completed successfully
+[ 2026-04-06 10:02:35,828 ] 14 networksecurityLogger - INFO - Training pipeline started
+[ 2026-04-06 10:02:40,151 ] 50 networksecurityLogger - INFO - Data fetched from MongoDB | shape: (11055, 31)
+[ 2026-04-06 10:02:40,918 ] 66 networksecurityLogger - INFO - Data saved to feature store
+[ 2026-04-06 10:02:41,786 ] 87 networksecurityLogger - INFO - Train-test split done
+[ 2026-04-06 10:02:41,788 ] 98 networksecurityLogger - INFO - Data ingestion completed
+[ 2026-04-06 10:02:41,789 ] 20 networksecurityLogger - INFO - Data Ingestion Artifact: DataIngestionArtifact(trained_file_path='Artifacts\\04_06_2026_10_02_35\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\04_06_2026_10_02_35\\data_ingestion\\ingested\\test.csv')
+[ 2026-04-06 10:02:41,790 ] 32 networksecurityLogger - INFO - Data Validation started
+[ 2026-04-06 10:02:41,828 ] 42 networksecurityLogger - INFO - Expected columns: 31
+[ 2026-04-06 10:02:41,828 ] 43 networksecurityLogger - INFO - Actual columns: 31
+[ 2026-04-06 10:02:41,828 ] 42 networksecurityLogger - INFO - Expected columns: 31
+[ 2026-04-06 10:02:41,829 ] 43 networksecurityLogger - INFO - Actual columns: 31
+[ 2026-04-06 10:02:42,717 ] 100 networksecurityLogger - INFO - Data Validation Completed
+[ 2026-04-06 10:02:42,718 ] 37 networksecurityLogger - INFO - Data Validation Artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\04_06_2026_10_02_35\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\04_06_2026_10_02_35\\data_validation\\validated\\test.csv', invalid_train_file_path='Artifacts\\04_06_2026_10_02_35\\data_validation\\invalid\\train.csv', invalid_test_file_path='Artifacts\\04_06_2026_10_02_35\\data_validation\\invalid\\test.csv', drift_report_file_path='Artifacts\\04_06_2026_10_02_35\\data_validation\\drift_report\\report.yaml')
+[ 2026-04-06 10:02:42,718 ] 39 networksecurityLogger - INFO - Training pipeline completed successfully
+[ 2026-04-06 11:41:43,551 ] 50 networksecurityLogger - INFO - Data fetched from MongoDB | shape: (11055, 31)
+[ 2026-04-06 11:41:44,134 ] 66 networksecurityLogger - INFO - Data saved to feature store
+[ 2026-04-06 11:41:44,866 ] 87 networksecurityLogger - INFO - Train-test split done
+[ 2026-04-06 11:41:44,867 ] 98 networksecurityLogger - INFO - Data ingestion completed
+[ 2026-04-06 11:41:44,868 ] 26 networksecurityLogger - INFO - Data Ingestion Artifact: DataIngestionArtifact(trained_file_path='Artifacts\\04_06_2026_11_41_36\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\04_06_2026_11_41_36\\data_ingestion\\ingested\\test.csv')
+[ 2026-04-06 11:41:44,908 ] 42 networksecurityLogger - INFO - Expected columns: 31
+[ 2026-04-06 11:41:44,908 ] 43 networksecurityLogger - INFO - Actual columns: 31
+[ 2026-04-06 11:41:44,908 ] 42 networksecurityLogger - INFO - Expected columns: 31
+[ 2026-04-06 11:41:44,909 ] 43 networksecurityLogger - INFO - Actual columns: 31
+[ 2026-04-06 11:41:45,697 ] 100 networksecurityLogger - INFO - Data Validation Completed
+[ 2026-04-06 11:41:45,698 ] 46 networksecurityLogger - INFO - Data Validation Artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\04_06_2026_11_41_36\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\04_06_2026_11_41_36\\data_validation\\validated\\test.csv', invalid_train_file_path='Artifacts\\04_06_2026_11_41_36\\data_validation\\invalid\\train.csv', invalid_test_file_path='Artifacts\\04_06_2026_11_41_36\\data_validation\\invalid\\test.csv', drift_report_file_path='Artifacts\\04_06_2026_11_41_36\\data_validation\\drift_report\\report.yaml')
+[ 2026-04-06 11:41:45,702 ] 53 networksecurityLogger - INFO - Starting Data Transformation
+[ 2026-04-06 11:41:45,736 ] 61 networksecurityLogger - INFO - Train shape: (8844, 31)
+[ 2026-04-06 11:41:45,736 ] 62 networksecurityLogger - INFO - Test shape: (2211, 31)
+[ 2026-04-06 11:41:45,739 ] 36 networksecurityLogger - INFO - Creating preprocessing pipeline
+[ 2026-04-06 11:41:45,756 ] 84 networksecurityLogger - INFO - Data transformed successfully
+[ 2026-04-06 11:41:45,788 ] 123 networksecurityLogger - INFO - Saved transformed data and preprocessing object
+[ 2026-04-06 11:41:45,790 ] 60 networksecurityLogger - INFO - Data Transformation Artifact: DataTransformationArtifact(transformed_train_file_path='Artifacts\\04_06_2026_11_41_36\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\04_06_2026_11_41_36\\data_transformation\\transformed\\test.npy', preprocessor_object_file_path='Artifacts\\04_06_2026_11_41_36\\data_transformation\\transformed_object\\preprocessing.pkl')
+[ 2026-04-06 11:42:54,477 ] 20 networksecurityLogger - INFO - === Training Pipeline Started ===
+[ 2026-04-06 11:42:54,477 ] 25 networksecurityLogger - INFO - Step 1: Data Ingestion Started
+[ 2026-04-06 11:42:59,285 ] 50 networksecurityLogger - INFO - Data fetched from MongoDB | shape: (11055, 31)
+[ 2026-04-06 11:42:59,986 ] 66 networksecurityLogger - INFO - Data saved to feature store
+[ 2026-04-06 11:43:00,700 ] 87 networksecurityLogger - INFO - Train-test split done
+[ 2026-04-06 11:43:00,701 ] 98 networksecurityLogger - INFO - Data ingestion completed
+[ 2026-04-06 11:43:00,702 ] 30 networksecurityLogger - INFO - Data Ingestion Completed: DataIngestionArtifact(trained_file_path='Artifacts\\04_06_2026_11_42_54\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\04_06_2026_11_42_54\\data_ingestion\\ingested\\test.csv')
+[ 2026-04-06 11:43:00,703 ] 40 networksecurityLogger - INFO - Step 2: Data Validation Started
+[ 2026-04-06 11:43:00,733 ] 42 networksecurityLogger - INFO - Expected columns: 31
+[ 2026-04-06 11:43:00,733 ] 43 networksecurityLogger - INFO - Actual columns: 31
+[ 2026-04-06 11:43:00,733 ] 42 networksecurityLogger - INFO - Expected columns: 31
+[ 2026-04-06 11:43:00,734 ] 43 networksecurityLogger - INFO - Actual columns: 31
+[ 2026-04-06 11:43:01,576 ] 100 networksecurityLogger - INFO - Data Validation Completed
+[ 2026-04-06 11:43:01,576 ] 50 networksecurityLogger - INFO - Data Validation Completed: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\04_06_2026_11_42_54\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\04_06_2026_11_42_54\\data_validation\\validated\\test.csv', invalid_train_file_path='Artifacts\\04_06_2026_11_42_54\\data_validation\\invalid\\train.csv', invalid_test_file_path='Artifacts\\04_06_2026_11_42_54\\data_validation\\invalid\\test.csv', drift_report_file_path='Artifacts\\04_06_2026_11_42_54\\data_validation\\drift_report\\report.yaml')
+[ 2026-04-06 11:43:01,577 ] 55 networksecurityLogger - INFO - Step 3: Data Transformation Started
+[ 2026-04-06 11:43:01,577 ] 53 networksecurityLogger - INFO - Starting Data Transformation
+[ 2026-04-06 11:43:01,598 ] 61 networksecurityLogger - INFO - Train shape: (8844, 31)
+[ 2026-04-06 11:43:01,598 ] 62 networksecurityLogger - INFO - Test shape: (2211, 31)
+[ 2026-04-06 11:43:01,600 ] 36 networksecurityLogger - INFO - Creating preprocessing pipeline
+[ 2026-04-06 11:43:01,609 ] 84 networksecurityLogger - INFO - Data transformed successfully
+[ 2026-04-06 11:43:01,634 ] 123 networksecurityLogger - INFO - Saved transformed data and preprocessing object
+[ 2026-04-06 11:43:01,635 ] 64 networksecurityLogger - INFO - Data Transformation Completed: DataTransformationArtifact(transformed_train_file_path='Artifacts\\04_06_2026_11_42_54\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\04_06_2026_11_42_54\\data_transformation\\transformed\\test.npy', preprocessor_object_file_path='Artifacts\\04_06_2026_11_42_54\\data_transformation\\transformed_object\\preprocessing.pkl')
+[ 2026-04-06 11:43:01,636 ] 66 networksecurityLogger - INFO - === Training Pipeline Completed Successfully ===
