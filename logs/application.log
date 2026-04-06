@@ -215,3 +215,41 @@
 [ 2026-04-06 12:27:30,089 ] 65 networksecurityLogger - INFO - Test Metric: ClassificationMetricArtifact(f1_score=0.9338613861386139, precision_score=0.9283464566929134, recall_score=0.9394422310756972)
 [ 2026-04-06 12:27:30,111 ] 84 networksecurityLogger - INFO - Model saved successfully
 [ 2026-04-06 12:27:30,113 ] 85 networksecurityLogger - INFO - Model Training Completed: ModelTrainerArtifact(trained_model_file_path='Artifacts\\04_06_2026_12_27_08\\model_trainer\\trained_model\\model.pkl', train_metric=0.9374810625189375, test_metric=0.9338613861386139)
+[ 2026-04-06 12:44:22,756 ] 22 networksecurityLogger - INFO - === Training Pipeline Started ===
+[ 2026-04-06 12:44:22,757 ] 27 networksecurityLogger - INFO - Step 1: Data Ingestion Started
+[ 2026-04-06 12:44:27,560 ] 50 networksecurityLogger - INFO - Data fetched from MongoDB | shape: (11055, 31)
+[ 2026-04-06 12:44:28,294 ] 66 networksecurityLogger - INFO - Data saved to feature store
+[ 2026-04-06 12:44:29,008 ] 87 networksecurityLogger - INFO - Train-test split done
+[ 2026-04-06 12:44:29,009 ] 98 networksecurityLogger - INFO - Data ingestion completed
+[ 2026-04-06 12:44:29,010 ] 32 networksecurityLogger - INFO - Data Ingestion Completed: DataIngestionArtifact(trained_file_path='Artifacts\\04_06_2026_12_44_21\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\04_06_2026_12_44_21\\data_ingestion\\ingested\\test.csv')
+[ 2026-04-06 12:44:29,010 ] 42 networksecurityLogger - INFO - Step 2: Data Validation Started
+[ 2026-04-06 12:44:29,051 ] 42 networksecurityLogger - INFO - Expected columns: 31
+[ 2026-04-06 12:44:29,051 ] 43 networksecurityLogger - INFO - Actual columns: 31
+[ 2026-04-06 12:44:29,052 ] 42 networksecurityLogger - INFO - Expected columns: 31
+[ 2026-04-06 12:44:29,052 ] 43 networksecurityLogger - INFO - Actual columns: 31
+[ 2026-04-06 12:44:29,908 ] 100 networksecurityLogger - INFO - Data Validation Completed
+[ 2026-04-06 12:44:29,909 ] 52 networksecurityLogger - INFO - Data Validation Completed: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\04_06_2026_12_44_21\\data_validation\\validated\\train.csv', valid_test_file_path='Artifacts\\04_06_2026_12_44_21\\data_validation\\validated\\test.csv', invalid_train_file_path='Artifacts\\04_06_2026_12_44_21\\data_validation\\invalid\\train.csv', invalid_test_file_path='Artifacts\\04_06_2026_12_44_21\\data_validation\\invalid\\test.csv', drift_report_file_path='Artifacts\\04_06_2026_12_44_21\\data_validation\\drift_report\\report.yaml')
+[ 2026-04-06 12:44:29,909 ] 57 networksecurityLogger - INFO - Step 3: Data Transformation Started
+[ 2026-04-06 12:44:29,910 ] 53 networksecurityLogger - INFO - Starting Data Transformation
+[ 2026-04-06 12:44:29,931 ] 61 networksecurityLogger - INFO - Train shape: (8844, 31)
+[ 2026-04-06 12:44:29,932 ] 62 networksecurityLogger - INFO - Test shape: (2211, 31)
+[ 2026-04-06 12:44:29,933 ] 36 networksecurityLogger - INFO - Creating preprocessing pipeline
+[ 2026-04-06 12:44:29,949 ] 84 networksecurityLogger - INFO - Data transformed successfully
+[ 2026-04-06 12:44:29,981 ] 123 networksecurityLogger - INFO - Saved transformed data and preprocessing object
+[ 2026-04-06 12:44:29,982 ] 66 networksecurityLogger - INFO - Data Transformation Completed: DataTransformationArtifact(transformed_train_file_path='Artifacts\\04_06_2026_12_44_21\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\04_06_2026_12_44_21\\data_transformation\\transformed\\test.npy', preprocessor_object_file_path='Artifacts\\04_06_2026_12_44_21\\data_transformation\\transformed_object\\preprocessing.pkl')
+[ 2026-04-06 12:44:29,982 ] 68 networksecurityLogger - INFO - === Training Pipeline Completed Successfully ===
+[ 2026-04-06 12:44:29,983 ] 74 networksecurityLogger - INFO - Step 4: Model Training Started
+[ 2026-04-06 12:44:29,983 ] 35 networksecurityLogger - INFO - Starting Multi-Model Training
+[ 2026-04-06 12:44:29,986 ] 89 networksecurityLogger - INFO - Training Logistic Regression
+[ 2026-04-06 12:44:34,720 ] 108 networksecurityLogger - INFO - Logistic Regression F1 Score: 0.932753164556962
+[ 2026-04-06 12:44:34,721 ] 89 networksecurityLogger - INFO - Training Decision Tree
+[ 2026-04-06 12:44:35,038 ] 108 networksecurityLogger - INFO - Decision Tree F1 Score: 0.9625498007968127
+[ 2026-04-06 12:44:35,038 ] 89 networksecurityLogger - INFO - Training Random Forest
+[ 2026-04-06 12:44:36,255 ] 108 networksecurityLogger - INFO - Random Forest F1 Score: 0.9731225296442688
+[ 2026-04-06 12:44:36,256 ] 89 networksecurityLogger - INFO - Training Gradient Boosting
+[ 2026-04-06 12:44:38,575 ] 108 networksecurityLogger - INFO - Gradient Boosting F1 Score: 0.9569340181746345
+[ 2026-04-06 12:44:38,575 ] 89 networksecurityLogger - INFO - Training AdaBoost
+[ 2026-04-06 12:44:40,336 ] 108 networksecurityLogger - INFO - AdaBoost F1 Score: 0.9405745769382133
+[ 2026-04-06 12:44:40,337 ] 116 networksecurityLogger - INFO - Best Model: Random Forest with F1 Score: 0.9731225296442688
+[ 2026-04-06 12:44:40,435 ] 143 networksecurityLogger - INFO - Best model saved successfully
+[ 2026-04-06 12:44:40,436 ] 85 networksecurityLogger - INFO - Model Training Completed: ModelTrainerArtifact(trained_model_file_path='Artifacts\\04_06_2026_12_44_21\\model_trainer\\trained_model\\model.pkl', train_metric=ClassificationMetricArtifact(f1_score=0.991559035899522, precision_score=0.9886432772257149, recall_score=0.9944920440636474), test_metric=ClassificationMetricArtifact(f1_score=0.9731225296442688, precision_score=0.9654901960784313, recall_score=0.9808764940239044))
